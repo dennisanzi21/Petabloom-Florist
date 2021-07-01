@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<head>
+<!--Web Logo & Title-->
+<link rel="icon" 
+	  type="image/png" 
+	  href="main_resources/icon.jpg" 
+	  sizes="96x96">
+<title>Petabloom Florist</title>
+<!--Include External CSS-->
+<link href="all in one.css"  rel="stylesheet" type="text/css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<a name="top"></a>
+<!--Background Image-->
+<img src="main_resources/rose.jpg" class="background"/>
+<!--Side Hover Menu Section-->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" 
+	 class="closebtn" 
+	 onclick="closeNav()">&times;</a>
+  <div class="onlyformember">
+  <img src="main_resources/onlyformember.png" 
+	   alt="Only For Member" >
+  </div>
+  <a href="login.htm"		>Log In</a>
+  <a href="register.htm"	>Register</a>
+  <a href="suggestion.htm"	>Suggestion</a>
+  <a href="giftlist.htm"		>Gift List</a>
+</div>
+<!--Side Hover Menu Section Ended-->
+<!--Body Section-->
+<div class="skin">
+	<div class="innerskin">
+		<!--Top Section-->
+		<div class="topbanner">
+			<div class="title_logo"><!--Title&Logo--></div>
+			<div class="socialmedia_links">
+				<div class="facebook">
+				<a href=""><img src ="main_resources/facebookicon.png"/></a>
+				</div>
+				<div class="instagram">
+				<a href=""><img src ="main_resources/instagramicon.png"/></a>
+				</div>
+				<div class="twitter">
+				<a href=""><img src ="main_resources/twittericon.png"/></a>
+				</div>
+			</div>
+			<div class="navigation">
+                <ul>
+					<li class="hover_menu"><a>
+						<span onclick="openNav()">&#9776;</span>
+						<script>
+						function openNav() 
+						{document.getElementById("mySidenav").style.width = "250px";}
+						function closeNav() 
+						{document.getElementById("mySidenav").style.width = "0";}
+						</script></a>
+					</li>
+					<div class="dropdown_nav_menu">
+                    <li><div class="home"><a   href="home.htm" style="color:red">Home</a></div></li>
+					<li><div class="dropdown_productlist">
+						<button  class="pl_buttons"  ><a href="productlist.htm" >Product List</a></button>
+							<div class="productlist_content">
+							<a   href="productlist.htm#HB">Hand Bouquest</a>
+							<a   href="productlist.htm#BSK">Baskets</a>
+							<a   href="productlist.htm#HMP">Hampers</a>
+							<a   href="productlist.htm#PLT">Plants</a>
+							</div>
+						</div>
+					</li>
+                	<li><div class="dropdown_events">
+						<button  class="e_buttons"><a href="event.htm"  >Events</a></button>
+							<div class="events_content">
+							<a   href="event.htm#WG">Wedding</a>
+							<a   href="event.htm#MD">Mother Day</a>
+							<a   href="event.htm#AY">Anniversary</a>
+							<a   href="event.htm#GN">Graduation</a>
+							</div>
+						</div>
+					</li>						
+                    <li><div class="dropdown_cart">
+						<button  class="c_buttons"           >Cart</button>
+							<div class="cart_content">
+							<a   href="cart.htm">View Cart</a>
+							<a   href="new_cart.htm">Clear Cart</a>
+							</div>
+						</div>
+					<li><div class="about_us"><a   href="aboutus.htm"            >About Us</a></div></li>
+					</div>
+					<li class="help"><a   href="help.htm"  target="_blank"  ><img src="main_resources/questionmark.png"></a></li>
+				</ul>
+			</div>
+		</div>
+		<!--Top Section Ended-->
+		<br><!--Pages Content....CSS differs in every page-->
+		<!--------Maintext-Background------->
+		<div class="homepage-maintext-bg"><br>
+            <!-------Slide Show------>
+			<div class="sales_banner">
+				<section>
+					<a><img class="mySlides" src="homepage_resources/sales1.jpg"></a>
+					<a><img class="mySlides" src="homepage_resources/sales2.jpg"></a>
+					<a><img class="mySlides" src="homepage_resources/sales3.jpg"></a>
+					<a><img class="mySlides" src="homepage_resources/sales4.jpg"></a>
+					<a><img class="mySlides" src="homepage_resources/sales5.jpg"></a>
+				</section>			
+				<!--Automatic Slideshow - change image every 3 seconds-->
+				<script>
+					var myIndex = 0;
+					carousel();
+					function carousel() {
+					var i;
+					var x = document.getElementsByClassName("mySlides");
+					for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";}
+					myIndex++;
+					if (myIndex > x.length) {myIndex = 1}
+					x[myIndex-1].style.display = "block";
+					setTimeout(carousel, 4000);}
+				</script>
+			</div>			
+			<hr>  
+			<!--Categories-->
+			<div class="category_1">
+				<a><img src="homepage_resources/newdesign.png" 
+					 alt="New Design Every Week"
+					 class="category_1"></a>
+			</div>
+			<div class="category_2">
+				<a><img src="homepage_resources/flowerandgoodies.png" 
+					 alt="Flowers and Goodies"
+					 class="category_2"></a>
+			</div>
+			<hr>
+			<div class="category_3">
+				<a><img src="homepage_resources/newitem.png" 
+					 alt="New Item"
+					 class="category_3">
+			</div>
+			<div class="category_4">
+				<a><img src="homepage_resources/description.jpg" 
+					 alt="Descriptions Of Us"
+					 class="category_4"></a>
+			</div>
+			<hr>
+			<div class="category_5">
+				<img src="homepage_resources/recommendedbyus.png" alt="Recommeded by us" class="recommeded_title">
+				<div class="products">
+				<ul>
+					<li><div class="img_container">
+							<a><img src="homepage_resources/flower1.png" 
+								 alt="Recommend Item 1" 
+								 class="imageA"></a>
+							<div class="text-block">
+							<p>F001	RM56</p>
+							</div>
+						</div>
+					</li>
+					<li><div class="img_container">
+							<a><img src="homepage_resources/flower2.png" 
+								 alt="Recommend Item 2" 
+								 class="imageA"></a>
+							<div class="text-block">
+							<p>F002	  RM74</p>
+							</div>
+						</div>
+					</li>
+					<li><div class="img_container">
+							<a><img src="homepage_resources/flower3.png" 
+								 alt="Recommend Item 3" 
+								 class="imageA"></a>
+							<div class="text-block">
+							<p>F003	  RM68</p>
+							</div>
+						</div>
+					</li>
+					<li><div class="img_container">
+							<a><img src="homepage_resources/flower4.png" 
+								 alt="Recommend Item 4" 
+								 class="imageA"></a>
+							<div class="text-block">
+							<p>F004	  RM88</p>
+							</div>
+						</div>
+					</li>
+					<li><div class="img_container">
+							<a><img src="homepage_resources/flower5.png" 
+								 alt="Recommend Item 5" 
+								 class="imageA"></a>
+							<div class="text-block">
+							<p>F005	  RM99</p>
+							</div>
+						</div>
+					</li>
+					<li><div class="img_container"><p class="more"><a href="">more......</a></p></li>
+				</ul>
+				</div>
+			</div>
+			<div class="linebreak">
+			<img src="homepage_resources/flobreak.png" class="line_break">
+			</div>
+		</div><br><!--------Maintext-Background------->
+		<!--WhatsApp Button-->
+		<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+		<div class="elfsight-app-7e1e456f-9d67-4583-a3ca-588b4493b215"></div>
+		<!--Bottom Section-->
+		<div class="footer"><br>
+			 <!------Footer Contents----->
+			 <div class="footer_contents">
+			 <a   href="#top">Back To The Top</a><br>
+				<!-----------Contact Us------------------>
+				<div class="footer_row">
+					<div class="contactus">
+						<p class="footer_title">Contact Us:</p>
+						<p>Tel  : (+6)03-41450123<br>
+						   Fax  : (+6)05-41423166<br>
+						   Email: info@mail.tarc.edu.my<br>
+						   Open : 10.00am to 6.15pm<br>
+						   (Weekdays)<br>
+						</p>
+					</div><!-----------Contact Us------------>
+					<div class="address">
+						<p class="footer_title">Our Location:</p>
+						<p>Kuala Lumpur Main Campus<br> 
+						   Jalan Genting Kelang, Setapak,<br>
+						   53300 Kuala Lumpur,<br>
+						   P.O. Box 10979,<br>
+						   50932 Kuala Lumpur,<br>
+						   Malaysia.<br>
+						</p>
+					</div>
+					<div class="googlemap">
+						<!------------Map To Our Store In KL----->
+						<div    class="">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.534024663618!2d101.72677241379544!3d3.2162247976583402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3843bfb6a031%3A0x2dc5e067aae3ab84!2sTunku%20Abdul%20Rahman%20University%20College!5e0!3m2!1sen!2smy!4v1573824438640!5m2!1sen!2smy">
+						</iframe>
+						</div><!------Map To Our Store In KL----->
+					</div>
+				</div>
+			 </div>
+			 <!-------Footer Details----->
+			 <div class="footer_details">
+			 <p class="footer_details">this page was created by (RSF1. Dennis, Amirul, Shi Xuan)</p> 
+			 </div>
+		<p></p>
+		</div><!--Bottom Section Ended-->
+   </div><!--- innerskin --->
+</div><!--- skin --->
+<!----------------------End Of The Page----------------------------------->
+</body>
+</html>

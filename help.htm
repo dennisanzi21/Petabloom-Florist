@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<head>
+<!--Web Logo & Title-->
+<link rel="icon" 
+	  type="image/png" 
+	  href="main_resources/icon.jpg" 
+	  sizes="96x96">
+<title>Petabloom Florist</title>
+<!--Include External CSS-->
+<link href="all in one.css"  rel="stylesheet" type="text/css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<a name="top"></a>
+<!--Background Image-->
+<img src="main_resources/rose.jpg" class="background"/>
+<!--Side Hover Menu Section-->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" 
+	 class="closebtn" 
+	 onclick="closeNav()">&times;</a>
+  <div class="onlyformember">
+  <img src="main_resources/onlyformember.png" 
+	   alt="Only For Member" >
+  </div>
+  <a href="login.htm"		>Log In</a>
+  <a href="register.htm"	>Register</a>
+  <a href="suggestion.htm"	>Suggestion</a>
+  <a href="giftlist.htm"		>Gift List</a>
+</div>
+<!--Side Hover Menu Section Ended-->
+<!--Body Section-->
+<div class="skin">
+	<div class="innerskin">
+		<!--Top Section-->
+		<div class="topbanner">
+			<div class="title_logo"><!--Title&Logo--></div>
+			<div class="socialmedia_links">
+				<div class="facebook">
+				<a href=""><img src ="main_resources/facebookicon.png"/></a>
+				</div>
+				<div class="instagram">
+				<a href=""><img src ="main_resources/instagramicon.png"/></a>
+				</div>
+				<div class="twitter">
+				<a href=""><img src ="main_resources/twittericon.png"/></a>
+				</div>
+			</div>
+			<div class="navigation">
+                <ul>
+					<li class="hover_menu"><a>
+						<span onclick="openNav()">&#9776;</span>
+						<script>
+						function openNav() 
+						{document.getElementById("mySidenav").style.width = "250px";}
+						function closeNav() 
+						{document.getElementById("mySidenav").style.width = "0";}
+						</script></a>
+					</li>
+					<div class="dropdown_nav_menu">
+                    <li><div class="home"><a   href="home.htm" >Home</a></div></li>
+					<li><div class="dropdown_productlist">
+						<button  class="pl_buttons"  ><a href="productlist.htm" >Product List</a></button>
+							<div class="productlist_content">
+							<a   href="productlist.htm#HB">Hand Bouquest</a>
+							<a   href="productlist.htm#BSK">Baskets</a>
+							<a   href="productlist.htm#HMP">Hampers</a>
+							<a   href="productlist.htm#PLT">Plants</a>
+							</div>
+						</div>
+					</li>
+                	<li><div class="dropdown_events">
+						<button  class="e_buttons"><a href="event.htm"  >Events</a></button>
+							<div class="events_content">
+							<a   href="event.htm#WG">Wedding</a>
+							<a   href="event.htm#MD">Mother Day</a>
+							<a   href="event.htm#AY">Anniversary</a>
+							<a   href="event.htm#GN">Graduation</a>
+							</div>
+						</div>
+					</li>						
+                    <li><div class="dropdown_cart">
+						<button  class="c_buttons"           >Cart</button>
+							<div class="cart_content">
+							<a   href="cart.htm">View Cart</a>
+							<a   href="new_cart.htm">Clear Cart</a>
+							</div>
+						</div>
+					<li><div class="about_us"><a   href="aboutus.htm"            >About Us</a></div></li>
+					</div>
+					<li class="help"><a   href="help.htm"  target="_blank"  ><img src="main_resources/questionmark.png"></a></li>
+				</ul>
+			</div>
+		</div>
+		<!--Top Section Ended-->
+		<br><!--Pages Content....CSS differs in every page-->
+		<!--------Maintext-Background------->
+		<div class="help_maintext_bg"><br>
+			<div class ="help_menu">
+			<img src   ="help_resources/helpmenu.png" 
+				 alt   ="Help Menu">
+			</div>
+			<div class="help_contents">
+			<ol>
+				<li>
+					<button type="button" class="collapsible">Dispatch & Delivery</button>
+					<div class="content">
+						<h4>When will the products be delivered</h4>
+						<p>We provide delivery services every day, including most public holidays. 
+						Generally, we will deliver your product within 2 hours of your order finalisation.
+						For floral emergencies, we also offer a special Express Delivery, 
+						for only RM50.00 extra, 
+						the ordered item will be delivered within 60 minutes of your order 
+						finalisation (provided the delivery location is within 30km of one of our hubs.)</p>
+					</div>
+				</li>
+				<li>
+					<button type="button" class="collapsible">Refund</button>
+					<div class="content">
+						<h4>Refund Policy</h4>
+						<p>If your order was unsatisfactory, 
+						you may request a refund by submitting a request within 24 hours after the delivery date. 
+						Please submit your claim to petalbloom florist.com.my. 
+						In case of quality issues, 
+						after receiving the request, our customer service agents will require that you send a digital picture of the delivered product.</p>
+					</div>
+				</li>
+				<li>
+					<button type="button" class="collapsible">Ordering & Cancelling</button>
+					<div class="content">
+						<h4>Order & Cancel</h4>
+						<p>It is pretty easy to order an item, just simply find a desire bouquest or hamper and add it to the cart for finalisation.
+						After the order was in process, no cancellation will be allow.</p>
+					</div>
+				</li>
+				<li>
+					<button type="button" class="collapsible">Payment</button>
+					<div class="content">
+						<h4>Way of Payment can be done</h4>
+						<p>We support Credit, Debit card, cheque, and online banking.</p>
+					</div>
+				</li>
+				<li>
+					<button type="button" class="collapsible">Manage Your Account</button>
+					<div class="content">
+						<h4>Where could I manage my account</h4>
+						<p>Customers are able to manage their account after login into their member user account.</p>
+					</div>
+				</li>
+				<li>
+					<button type="button" class="collapsible">Services</button>
+					<div class="content">
+						<h4>What other services do we offer?</h4>
+						<p>We are adding more and more products daily to our ever-growing website.
+						Knowing how important it is to customise gifts for their recipients, 
+						we try our best to accommodate if you have any special or specific requests. 
+						With that in mind, please do not be afraid to tell us what we can do to help; 
+						everything will be kept private and confidential.</p>
+					</div>
+				</li>
+				<li>
+					<button type="button" class="collapsible">Need More Help?</button>
+					<div class="content">
+						<h4>Need more help from the petabloom florist?</h4>
+						<p>Please feel free to give us suggestion and comment on our social webs.
+						You may also search help from our workers via enmails</p>
+					</div>
+				</li>
+				<li>
+					<button type="button" class="collapsible">Contact Us</button>
+					<div class="content">
+						<h4>How to Contact Customer Service?</h4>
+						<p>We are adding a whatsapp linker popup button at right bottom of the page,
+						please find us whenever you have any enquiry.</p>
+					</div>
+				</li>
+			</ol>
+			</div>
+			<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+			  coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.display === "block") {
+				  content.style.display = "none";
+				} else {
+				  content.style.display = "block";
+				}
+			  });
+			}
+			</script>
+			
+			
+		<!--WhatsApp Button-->
+		<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+		<div class="elfsight-app-7e1e456f-9d67-4583-a3ca-588b4493b215"></div>
+		</div><br><!--------Maintext-Background------->
+		<!--Bottom Section-->
+		<div class="footer"><br>
+			 <!------Footer Contents----->
+			 <div class="footer_contents">
+			 <a   href="#top">Back To The Top</a><br>
+				<!-----------Contact Us------------------>
+				<div class="footer_row">
+					<div class="contactus">
+						<p class="footer_title">Contact Us:</p>
+						<p>Tel  : (+6)03-41450123<br>
+						   Fax  : (+6)05-41423166<br>
+						   Email: info@mail.tarc.edu.my<br>
+						   Open : 10.00am to 6.15pm<br>
+						   (Weekdays)<br>
+						</p>
+					</div><!-----------Contact Us------------>
+					<div class="address">
+						<p class="footer_title">Our Location:</p>
+						<p>Kuala Lumpur Main Campus<br> 
+						   Jalan Genting Kelang, Setapak,<br>
+						   53300 Kuala Lumpur,<br>
+						   P.O. Box 10979,<br>
+						   50932 Kuala Lumpur,<br>
+						   Malaysia.<br>
+						</p>
+					</div>
+					<div class="googlemap">
+						<!------------Map To Our Store In KL----->
+						<div    class="">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.534024663618!2d101.72677241379544!3d3.2162247976583402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3843bfb6a031%3A0x2dc5e067aae3ab84!2sTunku%20Abdul%20Rahman%20University%20College!5e0!3m2!1sen!2smy!4v1573824438640!5m2!1sen!2smy">
+						</iframe>
+						</div><!------Map To Our Store In KL----->
+					</div>
+				</div>
+			 </div>
+			 <!-------Footer Details----->
+			 <div class="footer_details">
+			 <p class="footer_details">this page was created by (RSF1. Dennis, Amirul, Shi Xuan)</p> 
+			 </div>
+		<p></p>
+		</div><!--Bottom Section Ended-->
+   </div><!--- innerskin --->
+</div><!--- skin --->
+<!----------------------End Of The Page----------------------------------->
+</body>
+</html>
